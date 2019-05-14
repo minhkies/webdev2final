@@ -1,0 +1,99 @@
+$gradient: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+$shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08),
+0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    header {
+        margin-top: -100px;
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 2;
+
+        .logo_header {
+            max-width: 150px;
+            height: auto;
+            margin-left: 50px;
+        }
+
+        nav {
+
+            margin-right: 50px;
+            border-radius: 20px;
+            box-shadow: $shadow;
+            display: flex;
+            height: 8vh;
+            background-color: white;
+
+            a {
+                text-decoration: none;
+                color: black;
+                line-height: 8vh;
+                text-align: center;
+                width: 100px;
+
+
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    main {
+        margin-top: 100px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+
+        h1 {
+            margin: 20px;
+            grid-column: 1/3;
+        }
+
+        .intro {
+            margin: 0 20px 100px 20px;
+        }
+
+        .info {
+            margin: 0 20px 100px 50px;
+            display: flex;
+
+            p:first-child {
+                text-align: right;
+                font-weight: bold;
+                margin-right: 20px;
+            }
+        }
+
+        .details {
+            grid-column: 1/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .detail-text {
+                margin: 20px;
+            }
+
+            .image-fit {
+                width: 50vw;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: 50vw auto
+            }
+        }
+    }
+}

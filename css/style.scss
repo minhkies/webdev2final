@@ -1,0 +1,506 @@
+$gradient: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+$shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08),
+0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+
+    main {
+        left: 0;
+        top: 0;
+        width: 100vw;
+
+        section {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .section1 {
+            background-image: url("../img/hero.svg");
+            background-size: cover;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+
+            .logo {
+                max-width: 150px;
+                margin-left: 50px;
+                margin-top: 30px;
+                grid-row: 1/4;
+            }
+
+            .focus {
+                grid-row: 3/6;
+                grid-column: 7/13;
+
+                p {
+                    font-size: 24pt;
+                    font-weight: 100;
+
+                    .my_name {
+                        font-weight: 700;
+                        font-size: 36pt;
+                    }
+
+                    .my_location {
+                        font-style: italic;
+                    }
+
+                    .my_role {
+                        font-weight: 400;
+                    }
+                }
+
+                .buttons {
+                    display: flex;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 12pt;
+                        font-weight: 100;
+                        line-height: 100px;
+                        text-align: center;
+                        height: 100px;
+                        width: 200px;
+                        background-color: #a38560;
+                        background-image: $gradient;
+                        border-radius: 20px;
+                        margin: 20px 20px 0 0;
+                        box-shadow: $shadow;
+
+                        &:hover {
+                            background-color: white;
+                            background-image: none;
+                            color: black;
+                            font-weight: 400;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section2 {
+            background-color: #f5f5f5;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: 3fr 2fr;
+
+            .logo {
+                max-width: 150px;
+                margin-left: 50px;
+                margin-top: 30px;
+                grid-row: 1/2;
+                grid-column: 1/2;
+            }
+
+            h1 {
+                font-size: 150pt;
+                font-weight: 900;
+                grid-column: 1/2;
+                grid-row: 1/3;
+                height: 100vh;
+                line-height: 100vh;
+                align-self: center;
+                justify-self: center;
+                color: #a38560;
+                background: $gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-attachment: fixed;
+                animation: headings 10s linear alternate-reverse infinite;
+            }
+
+            .wid_container {
+                grid-row: 1/3;
+                grid-column: 2/3;
+                align-self: center;
+                height: 90vh;
+                display: grid;
+                grid-column-gap: 50px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5, 1fr);
+                justify-self: start;
+
+
+                .wid {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    &>img {
+                        max-height: 150px;
+                    }
+
+                    .heading {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 16pt;
+                        margin: 5px 0;
+                    }
+
+                    p {
+                        font-weight: 100;
+                    }
+                }
+
+                .wid1 {
+                    grid-column: 1/2;
+                    grid-row: 1/3;
+                }
+
+                .wid2 {
+                    grid-column: 2/3;
+                    grid-row: 2/4;
+                }
+
+                .wid3 {
+                    grid-column: 1/2;
+                    grid-row: 3/5;
+                }
+
+                .wid4 {
+                    grid-column: 2/3;
+                    grid-row: 4/6;
+                }
+            }
+        }
+
+        .section3 {
+            display: flex;
+            flex-direction: column;
+            background-position: fixed;
+
+            .logo {
+                max-width: 150px;
+                margin-left: 50px;
+                margin-top: 30px;
+            }
+
+            h1 {
+                align-self: center;
+                font-size: 150pt;
+                font-weight: 900;
+                align-self: end;
+                text-align: right;
+                margin: 100px 100px 0 0;
+                animation: headings 10s linear alternate-reverse infinite;
+            }
+        }
+
+        .section4 {
+            width: 100vw;
+            height: 100vh;
+            background-image: url("../img/lecafe.png");
+            background-size: cover;
+            background-repeat: none;
+            background-position: center center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .section4_content {
+                width: 30vw;
+                padding: 50px 0 0 40px;
+
+                h1 {
+                    font-size: 72pt;
+                    margin-bottom: 0;
+                }
+
+                .cate {
+                    font-style: italic;
+                    font-weight: 400;
+                    margin-top: -20px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+                    font-weight: 100;
+                }
+
+                .buttons {
+                    display: flex;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 12pt;
+                        font-weight: 100;
+                        line-height: 60px;
+                        text-align: center;
+                        height: 60px;
+                        width: 200px;
+                        background-color: #a38560;
+                        background-image: $gradient;
+                        border-radius: 20px;
+                        margin-top: 20px;
+                        box-shadow: $shadow;
+
+                        &:hover {
+                            background-color: white;
+                            background-image: none;
+                            color: black;
+                            font-weight: 400;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+
+            .logo {
+                max-width: 150px;
+                margin: 50px 50px 0 0;
+                justify-self: end;
+            }
+        }
+
+        .section5 {
+            width: 100vw;
+            height: 100vh;
+
+            .section5_content {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+
+                .poster {
+                    height: 100vh;
+                    flex: 1;
+                    background-image: url("../img/poster.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center left;
+                }
+
+                .poster_details {
+                    flex: 1;
+                    padding-top: 100px;
+
+                    h1 {
+                        font-size: 72pt;
+
+                        line-height: 60pt;
+                    }
+
+                    .cate {
+                        font-style: italic;
+                        font-weight: 400;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        font-weight: 100;
+                        margin-right: 50px;
+                    }
+
+                    .buttons {
+                        display: flex;
+
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-size: 12pt;
+                            font-weight: 100;
+                            line-height: 60px;
+                            text-align: center;
+                            height: 60px;
+                            width: 200px;
+                            background-color: #a38560;
+                            background-image: $gradient;
+                            border-radius: 20px;
+                            margin-top: 20px;
+                            box-shadow: $shadow;
+
+                            &:hover {
+                                background-color: white;
+                                background-image: none;
+                                color: black;
+                                font-weight: 400;
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        height: 10vh;
+        background-color: #e6e6e6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 9pt;
+            color: darkgray;
+            font-weight: 100;
+        }
+    }
+}
+
+@keyframes headings {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 24pt !important;
+        margin: 0 !important;
+    }
+
+    header {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+
+        .logo_header {
+            margin-left: 0 !important;
+        }
+
+        nav {
+            margin-right: 0 !important;
+        }
+    }
+
+    main {
+        display: flex !important;
+        flex-direction: column !important;
+
+        .section1 {
+            background-image: none !important;
+            grid-template-columns: 1fr !important;
+
+            .logo {
+                content: url('../img/logograd.png') !important;
+                grid-column: 1/3 !important;
+                grid-row: 1/2 !important;
+                margin: 0 !important;
+                justify-self: center !important;
+                align-self: center !important;
+            }
+
+            .focus {
+                grid-column: 1/3 !important;
+                padding: 20px !important;
+
+                .buttons {
+                    justify-content: center !important;
+                    align-items: center !important;
+
+                    a {
+                        margin: 10 !important;
+                    }
+                }
+            }
+        }
+
+        .section2 {
+            display: flex !important;
+            flex-direction: column !important;
+            padding: 0px !important;
+            height: 200vh !important;
+
+            .logo {
+                display: none;
+            }
+
+            h1 {
+                height: 20vh !important;
+                line-height: 20vh !important;
+            }
+
+            .wid_container {
+                display: flex !important;
+                flex-direction: column !important;
+
+                .wid {
+                    margin-top: 0px !important;
+                }
+            }
+
+        }
+
+        .section3 {
+            height: 20vh !important;
+
+            justify-content: center !important;
+
+
+            .logo {
+                display: none !important;
+            }
+
+            h1 {
+                text-align: center !important;
+                align-self: center !important;
+            }
+        }
+
+        .section4 {
+            height: auto !important;
+            background-image: none !important;
+            display: flex !important;
+            flex-direction: column-reverse !important;
+
+            .section4_content {
+                width: 90vw !important;
+                padding: 0px !important;
+                margin: 20px !important;
+
+                .cate {
+                    margin: 20px 0 20px 0 !important;
+                }
+            }
+
+            .logo {
+                content: url("../img/lecafe.png");
+                max-width: 100vw !important;
+                margin: 0 !important;
+            }
+        }
+
+        .section5 {
+            margin-top: 50px !important;
+
+            .section5_content {
+                display: flex !important;
+                flex-direction: column !important;
+
+                .poster {
+                    background-position: center center !important;
+                }
+
+                .poster_details {
+                    padding: 30px !important;
+
+                    p {
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}

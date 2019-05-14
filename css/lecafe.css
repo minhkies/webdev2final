@@ -1,0 +1,10 @@
+.image-fit:nth-child(1) {
+    height: 100vh;
+    background-image: url('../img/menu.png');
+}
+
+.image-fit:last-child {
+    height: 100vh;
+    background-image: url('../img/ourstory.png');
+    background-position: right;
+}

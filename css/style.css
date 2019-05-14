@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden; }
+  body main {
+    left: 0;
+    top: 0;
+    width: 100vw; }
+    body main section {
+      width: 100vw;
+      height: 100vh; }
+    body main .section1 {
+      background-image: url("../img/hero.svg");
+      background-size: cover;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(5, 1fr); }
+      body main .section1 .logo {
+        max-width: 150px;
+        margin-left: 50px;
+        margin-top: 30px;
+        grid-row: 1/4; }
+      body main .section1 .focus {
+        grid-row: 3/6;
+        grid-column: 7/13; }
+        body main .section1 .focus p {
+          font-size: 24pt;
+          font-weight: 100; }
+          body main .section1 .focus p .my_name {
+            font-weight: 700;
+            font-size: 36pt; }
+          body main .section1 .focus p .my_location {
+            font-style: italic; }
+          body main .section1 .focus p .my_role {
+            font-weight: 400; }
+        body main .section1 .focus .buttons {
+          display: flex; }
+          body main .section1 .focus .buttons a {
+            text-decoration: none;
+            color: white;
+            font-size: 12pt;
+            font-weight: 100;
+            line-height: 100px;
+            text-align: center;
+            height: 100px;
+            width: 200px;
+            background-color: #a38560;
+            background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+            border-radius: 20px;
+            margin: 20px 20px 0 0;
+            box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05); }
+            body main .section1 .focus .buttons a:hover {
+              background-color: white;
+              background-image: none;
+              color: black;
+              font-weight: 400;
+              margin-top: 30px; }
+    body main .section2 {
+      background-color: #f5f5f5;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 3fr 2fr; }
+      body main .section2 .logo {
+        max-width: 150px;
+        margin-left: 50px;
+        margin-top: 30px;
+        grid-row: 1/2;
+        grid-column: 1/2; }
+      body main .section2 h1 {
+        font-size: 150pt;
+        font-weight: 900;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        height: 100vh;
+        line-height: 100vh;
+        align-self: center;
+        justify-self: center;
+        color: #a38560;
+        background: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-attachment: fixed;
+        animation: headings 10s linear alternate-reverse infinite; }
+      body main .section2 .wid_container {
+        grid-row: 1/3;
+        grid-column: 2/3;
+        align-self: center;
+        height: 90vh;
+        display: grid;
+        grid-column-gap: 50px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        justify-self: start; }
+        body main .section2 .wid_container .wid {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          body main .section2 .wid_container .wid > img {
+            max-height: 150px; }
+          body main .section2 .wid_container .wid .heading {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16pt;
+            margin: 5px 0; }
+          body main .section2 .wid_container .wid p {
+            font-weight: 100; }
+        body main .section2 .wid_container .wid1 {
+          grid-column: 1/2;
+          grid-row: 1/3; }
+        body main .section2 .wid_container .wid2 {
+          grid-column: 2/3;
+          grid-row: 2/4; }
+        body main .section2 .wid_container .wid3 {
+          grid-column: 1/2;
+          grid-row: 3/5; }
+        body main .section2 .wid_container .wid4 {
+          grid-column: 2/3;
+          grid-row: 4/6; }
+    body main .section3 {
+      display: flex;
+      flex-direction: column;
+      background-position: fixed; }
+      body main .section3 .logo {
+        max-width: 150px;
+        margin-left: 50px;
+        margin-top: 30px; }
+      body main .section3 h1 {
+        align-self: center;
+        font-size: 150pt;
+        font-weight: 900;
+        align-self: end;
+        text-align: right;
+        margin: 100px 100px 0 0;
+        animation: headings 10s linear alternate-reverse infinite; }
+    body main .section4 {
+      width: 100vw;
+      height: 100vh;
+      background-image: url("../img/lecafe.png");
+      background-size: cover;
+      background-repeat: none;
+      background-position: center center;
+      display: grid;
+      grid-template-columns: 1fr 1fr; }
+      body main .section4 .section4_content {
+        width: 30vw;
+        padding: 50px 0 0 40px; }
+        body main .section4 .section4_content h1 {
+          font-size: 72pt;
+          margin-bottom: 0; }
+        body main .section4 .section4_content .cate {
+          font-style: italic;
+          font-weight: 400;
+          margin-top: -20px;
+          margin-bottom: 30px; }
+        body main .section4 .section4_content p {
+          font-weight: 100; }
+        body main .section4 .section4_content .buttons {
+          display: flex; }
+          body main .section4 .section4_content .buttons a {
+            text-decoration: none;
+            color: white;
+            font-size: 12pt;
+            font-weight: 100;
+            line-height: 60px;
+            text-align: center;
+            height: 60px;
+            width: 200px;
+            background-color: #a38560;
+            background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05); }
+            body main .section4 .section4_content .buttons a:hover {
+              background-color: white;
+              background-image: none;
+              color: black;
+              font-weight: 400;
+              margin-top: 30px; }
+      body main .section4 .logo {
+        max-width: 150px;
+        margin: 50px 50px 0 0;
+        justify-self: end; }
+    body main .section5 {
+      width: 100vw;
+      height: 100vh; }
+      body main .section5 .section5_content {
+        width: 100vw;
+        height: 100vh;
+        display: flex; }
+        body main .section5 .section5_content .poster {
+          height: 100vh;
+          flex: 1;
+          background-image: url("../img/poster.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center left; }
+        body main .section5 .section5_content .poster_details {
+          flex: 1;
+          padding-top: 100px; }
+          body main .section5 .section5_content .poster_details h1 {
+            font-size: 72pt;
+            line-height: 60pt; }
+          body main .section5 .section5_content .poster_details .cate {
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 30px; }
+          body main .section5 .section5_content .poster_details p {
+            font-weight: 100;
+            margin-right: 50px; }
+          body main .section5 .section5_content .poster_details .buttons {
+            display: flex; }
+            body main .section5 .section5_content .poster_details .buttons a {
+              text-decoration: none;
+              color: white;
+              font-size: 12pt;
+              font-weight: 100;
+              line-height: 60px;
+              text-align: center;
+              height: 60px;
+              width: 200px;
+              background-color: #a38560;
+              background-image: linear-gradient(315deg, #a38560 0%, #e0d4ae 74%);
+              border-radius: 20px;
+              margin-top: 20px;
+              box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05); }
+              body main .section5 .section5_content .poster_details .buttons a:hover {
+                background-color: white;
+                background-image: none;
+                color: black;
+                font-weight: 400;
+                margin-top: 30px; }
+  body footer {
+    height: 10vh;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    body footer p {
+      font-size: 9pt;
+      color: darkgray;
+      font-weight: 100; }
+
+@keyframes headings {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1.1); } }
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 24pt !important;
+    margin: 0 !important; }
+
+  header {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center; }
+    header .logo_header {
+      margin-left: 0 !important; }
+    header nav {
+      margin-right: 0 !important; }
+
+  main {
+    display: flex !important;
+    flex-direction: column !important; }
+    main .section1 {
+      background-image: none !important;
+      grid-template-columns: 1fr !important; }
+      main .section1 .logo {
+        content: url("../img/logograd.png") !important;
+        grid-column: 1/3 !important;
+        grid-row: 1/2 !important;
+        margin: 0 !important;
+        justify-self: center !important;
+        align-self: center !important; }
+      main .section1 .focus {
+        grid-column: 1/3 !important;
+        padding: 20px !important; }
+        main .section1 .focus .buttons {
+          justify-content: center !important;
+          align-items: center !important; }
+          main .section1 .focus .buttons a {
+            margin: 10 !important; }
+    main .section2 {
+      display: flex !important;
+      flex-direction: column !important;
+      padding: 0px !important;
+      height: 200vh !important; }
+      main .section2 .logo {
+        display: none; }
+      main .section2 h1 {
+        height: 20vh !important;
+        line-height: 20vh !important; }
+      main .section2 .wid_container {
+        display: flex !important;
+        flex-direction: column !important; }
+        main .section2 .wid_container .wid {
+          margin-top: 0px !important; }
+    main .section3 {
+      height: 20vh !important;
+      justify-content: center !important; }
+      main .section3 .logo {
+        display: none !important; }
+      main .section3 h1 {
+        text-align: center !important;
+        align-self: center !important; }
+    main .section4 {
+      height: auto !important;
+      background-image: none !important;
+      display: flex !important;
+      flex-direction: column-reverse !important; }
+      main .section4 .section4_content {
+        width: 90vw !important;
+        padding: 0px !important;
+        margin: 20px !important; }
+        main .section4 .section4_content .cate {
+          margin: 20px 0 20px 0 !important; }
+      main .section4 .logo {
+        content: url("../img/lecafe.png");
+        max-width: 100vw !important;
+        margin: 0 !important; }
+    main .section5 {
+      margin-top: 50px !important; }
+      main .section5 .section5_content {
+        display: flex !important;
+        flex-direction: column !important; }
+        main .section5 .section5_content .poster {
+          background-position: center center !important; }
+        main .section5 .section5_content .poster_details {
+          padding: 30px !important; }
+          main .section5 .section5_content .poster_details p {
+            margin: 0 !important; } }
+
+/*# sourceMappingURL=style.css.map */
